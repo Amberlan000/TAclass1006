@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1117_Lab_HTML</title>
+    <style>
+
+        table {
+            border: 1px solid black; /* Add a border using CSS */
+            width: 100%;
+    
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <table >
+        <thead>
+            <tr>
+
+                <th colspan="3" class="row1">About--109208056</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><img src="cat.jpeg" alt="cat" wide = 280 height = "220" /><br>personal photo</td>
+                <td colspan="2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">Male
+                    <input type="radio" id="female" name="gender" value="female">Female
+                    <input type="radio" id="other" name="gender" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                	<label for="country">Country:</label>
+    				<select id="country" name="country">
+				        <option value="TP">Taipei</option>
+				        <option value="TN">Tainan</option>
+				        <option value="TC">Taichung</option>
+				        <option value="TY">Taoyuan</option>
+                </td>
+                <td>
+                	<form action="/action_page.php">
+					    <label for="birthday">Select your birthday:</label>
+					    <input type="date" id="birthday" name="birthday">
+					</form>
+
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="2">
+                	<label for="E-mail">E-mail:</label>
+                    <input type="mail" id="E-mail" name="E-mail" required style="width: 50%;">
+                </td>
+            <tr>
+                <td>Hobby</td>
+
+                <td colspan="2">
+                	<form action="/action_page.php" method="get">
+					  <input type="checkbox" name="hobby1" value="Swimming">Swimming
+					  <input type="checkbox" name="hobby2" value="Volleyball">Volleyball
+					  <input type="checkbox" name="hobby3" value="Movie">Movie
+					  <input type="checkbox" name="hobby4" value="Game">Game
+					  <input type="checkbox" name="hobby5" value="Sleep">Sleep
+					</form>
+            	</td>
+            </tr>
+            <tr>
+                <td>Skill</td>
+                <td colspan="2">
+                	<form action="/action_page.php" method="get">
+					  <input type="checkbox" name="skill1" value="Java">Java
+					  <input type="checkbox" name="skill2" value="HTML">HTML
+					  <input type="checkbox" name="skill3" value="Python">Python
+					  <input type="checkbox" name="skill4" value="Microsoft Office">Microsoft Office
+					  <input type="checkbox" name="skill5" value="Premiere">Premiere
+					</form>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Say Something</td>
+                <td colspan="2">
+                	<textarea id="comments" name="comments" cols="50" placeholder="Say something here..."></textarea>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                	<input type="submit" value="Submit">
+                	<input type="reset" value="clear">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
